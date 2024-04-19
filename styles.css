@@ -1,0 +1,87 @@
+/* styles.css */
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b6d6f2; /* azul claro */
+    color: #404040;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #ececec;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+
+
+aside {
+    width: 20%; /* O el ancho que prefieras */
+    background-color: #d3e0ea; /* otro tono de azul */
+    padding: 20px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+    height: 90%; /* Esto hace que el aside alcance el alto del contenedor */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que main ocupe el espacio restante */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding: 20px;
+}
+
+section {
+    width: 80%; /* Ajusta según prefieras */
+    max-width: 960px; /* Establece un ancho máximo para las secciones */
+    text-align: center; /* Centra el texto dentro de las secciones */
+    margin-bottom: 20px; /* Espaciado entre secciones */
+}
+
+footer {
+    flex-shrink: 0; /* evita que el footer se reduzca */
+    background-color: #b6d6f2;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+.perfil-img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    margin: 10px 100px 20px;
+}
+
+.content-container {
+    display: flex;
+    height: calc(100vh - 60px); /* Ajusta el 60px si tu header o nav son más grandes */
+}
